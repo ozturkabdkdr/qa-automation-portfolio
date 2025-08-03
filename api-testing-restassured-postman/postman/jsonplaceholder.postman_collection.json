@@ -1,0 +1,46 @@
+{
+    "info": {
+      "name": "JSONPlaceholder API Tests",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "GET /posts",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts",
+            "protocol": "https",
+            "host": ["jsonplaceholder", "typicode", "com"],
+            "path": ["posts"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "POST /posts",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{ \"title\": \"foo\", \"body\": \"bar\", \"userId\": 1 }"
+          },
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts",
+            "protocol": "https",
+            "host": ["jsonplaceholder", "typicode", "com"],
+            "path": ["posts"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
