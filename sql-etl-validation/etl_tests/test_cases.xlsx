@@ -1,0 +1,8 @@
+| ID   | Test Description                       | SQL Script              | Expected Result               |
+| ---- | -------------------------------------- | ----------------------- | ----------------------------- |
+| TC01 | Check row count in source              | `source_validation.sql` | row\_count > 0                |
+| TC02 | Check duplicates in `user_id`          | `source_validation.sql` | 0 duplicate rows              |
+| TC03 | Validate nulls in critical columns     | `source_validation.sql` | 0 nulls in user\_id/email     |
+| TC04 | Compare row counts                     | `data_count_check.sql`  | source\_count = target\_count |
+| TC05 | Validate email format in target        | `target_validation.sql` | All emails valid format       |
+| TC06 | Validate boolean values in `is_active` | `target_validation.sql` | Only true/false values        |
